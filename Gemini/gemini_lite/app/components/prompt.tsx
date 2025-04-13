@@ -13,7 +13,7 @@ export function Result_Box() {
     const [prompty, setPrompty] = useState("");
     const [count,setCount] = useState(5);
     const [tog,setToggle] = useState(0);
-    const genAI = new GoogleGenerativeAI("AIzaSyBDJITVLPsF_pL_enG6Qm7lp8r3T52CGuo");
+    const genAI = new GoogleGenerativeAI("Your-Key");
     const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
     // getResults Function
     async function getResults() {
